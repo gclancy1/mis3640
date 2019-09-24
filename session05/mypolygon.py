@@ -51,6 +51,9 @@ def polyline(t, n, length, angle):
 
 
 def polygon(t, n, length):
+    '''
+    creates a polygon with n sides and each side will be length long.
+    '''
     angle = 360 / n
     polyline(t, n, length, angle)
 
