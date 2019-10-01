@@ -74,9 +74,9 @@ def calculate_avg(n):
 # following lines and run this file to test!
 
 # print(calculate_avg(1))
-## expect: 1
+## expect: 1.0
 # print(calculate_avg(10))
-## expect: 245
+## expect: 245.0
 
 
 """
