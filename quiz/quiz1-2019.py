@@ -10,6 +10,8 @@ def sum_uniques(a, b, c):
     """
     Given 3 integers, a b c, return their sum. However, if two numbers are the same, only return the other number. If three numbers are the same, return 0.
     """
+    return 
+
 
 
 # When you've completed your function, uncomment the
@@ -74,7 +76,7 @@ def calculate_avg(n):
 # print(calculate_avg(1))
 ## expect: 1
 # print(calculate_avg(10))
-## expect: 605
+## expect: 245
 
 
 """
