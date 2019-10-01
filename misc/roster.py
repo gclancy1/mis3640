@@ -9,7 +9,7 @@ class_roster = ['Krishna',
                 'Myat Shwe Yee',
                 'Carmen',
                 'Victoria',
-                'Seo Yeon',
+                'Jinna',
                 'Nico',
                 'Owen',
                 'Meiling',
@@ -18,9 +18,9 @@ class_roster = ['Krishna',
                 'Shaun',
                 'Brian',
                 'David',
-                'Baixi',
+                'Patrick',
                 'Shirley',
                 'Arteen',
-                'Jiashu']
+                'Julie']
 
 print(random.choice(class_roster))
