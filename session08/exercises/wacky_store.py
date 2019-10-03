@@ -5,6 +5,7 @@ def get_price(item):
             price += ord(letter) - 96
     return price
 
+
 # print(get_price('bananas'))
 # print(get_price('potato chips'))
 
@@ -15,15 +16,19 @@ def print_receipt(items):
     width = len(longest_word)
     for item in items:
         price = get_price(item)
-        print('{:<{number_length}}  ${:>6,.2f}'.format(
-            item, price, number_length=width))
+        print(
+            "{:<{number_length}}  ${:>6,.2f}".format(item, price, number_length=width)
+        )
         total_price += price
 
-    print('-' * (width + 9))
-    print('{:<{number_length}}  ${:>6,.2f}'.format(
-        'Total', total_price, number_length=width))
+    print("-" * (width + 9))
+    print(
+        "{:<{number_length}}  ${:>6,.2f}".format(
+            "Total", total_price, number_length=width
+        )
+    )
 
 
-items = ['bananas', 'rice', 'paprika', 'potato chips']
+items = ["bananas", "rice", "paprika", "potato chips"]
 
 print_receipt(items[:])

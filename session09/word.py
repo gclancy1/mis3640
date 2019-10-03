@@ -12,7 +12,8 @@ def find_long_words():
     """
     prints only the words with more than 20 characters
     """
-    
+
+
 # find_long_words()
 
 
@@ -21,12 +22,13 @@ def has_no_e(word):
     returns True if the given word doesn’t have the letter "e" in it
     """
 
+
 # print(has_no_e('Babson'))
 # print(has_no_e('College'))
 # print(has_no_e('EA'))
 
 
-def find_words_no_e():    
+def find_words_no_e():
     """
     returns the percentage of the words that don't have the letter "e"
     """
@@ -63,11 +65,8 @@ def uses_only(word, available):
     """
 
 
-
 # print(uses_only('Babson', 'aBbsonxyz'))
 # print(uses_only('college', 'aBbsonxyz'))
-
-
 
 
 def uses_all(word, required):
@@ -89,7 +88,6 @@ def find_words_using_all_vowels():
     """
 
 
-
 # print('The number of words that use all the vowels:',
 #       find_words_using_all_vowels())
 
@@ -101,9 +99,9 @@ def is_abecedarian(word):
     """
 
 
-
 # print(is_abecedarian('abs'))
 # print(is_abecedarian('college'))
+
 
 def find_abecedarian_words():
     """

@@ -32,7 +32,7 @@
 #     else:
 #         print(letter + suffix)
 
-team = 'New England Patriots'
+team = "New England Patriots"
 print(team[:11])
 print(team[12:])
 
@@ -40,9 +40,9 @@ print(team[::2])
 
 # team[12:20] = 'Seahawks'
 
-new_team = team[:12] + 'Giants'
+new_team = team[:12] + "Giants"
 print(new_team)
-print(team) 
+print(team)
 
 
 def count(s, letter):
@@ -52,5 +52,7 @@ def count(s, letter):
             counter += 1
     return counter
 
-print(count(team, 'a'))
-print(count(team,'e'))
+
+print(count(team, "a"))
+print(count(team, "e"))
+

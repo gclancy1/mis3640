@@ -12,8 +12,7 @@ def is_reverse(word1, word2):
     #     j = j - 1
     # return True
 
+    return word1 == word2[::-1]
 
-    return word1==word2[::-1]
 
-
-print(is_reverse('pots', 'stop'))
+print(is_reverse("pots", "stop"))
