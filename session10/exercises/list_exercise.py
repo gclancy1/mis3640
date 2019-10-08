@@ -28,7 +28,6 @@ def cumsum(t):
     return
 
 
-
 def middle(t):
     """Returns all but the first and last elements of t.
 
@@ -155,5 +154,5 @@ def main():
     # print(has_duplicates('abba'))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -173,14 +173,27 @@ def is_abecedarian(word):
     return True
 
 
-print(is_abecedarian('abs'))
-print(is_abecedarian('college'))
+# print(is_abecedarian('abs'))
+# print(is_abecedarian('college'))
+
 
 
 def find_abecedarian_words():
     """
     returns the number of abecedarian words and the longest abecedarian word
     """
+    fin = open('session09/words.txt')
+    counter = 0
+    current_longest_word = ''
+    for line in fin:
+        word = line.strip()
+        if is_abecedarian(word):
+            # print(word)
+            counter += 1
+            if len(word) > len(current_longest_word):
+                current_longest_word = word
+
+    return counter, current_longest_word
 
 
 # print(find_abecedarian_words())
@@ -191,6 +204,11 @@ def is_abecedarian_using_recursion(word):
     returns True if the letters in a word appear in alphabetical order
     (double letters are ok).
     """
+    if len(word) <= 1:
+        return True
+    if word[0] > word[1]:
+        return False
+    return is_abecedarian_using_recursion(word[1:])
 
 
 def is_abecedarian_using_while(word):
@@ -198,3 +216,10 @@ def is_abecedarian_using_while(word):
     returns True if the letters in a word appear in alphabetical order
     (double letters are ok).
     """
+    i = 0
+    while i < len(word)-1:
+        if word[i+1] < word[i:]:
+            return False
+        i = i + 1
+    return True
+

@@ -20,7 +20,7 @@ def interlock_general(word_list, word, n=3):
     pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     word_list = make_word_list()
 
     for word in word_list:

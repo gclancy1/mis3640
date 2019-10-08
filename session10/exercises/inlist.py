@@ -4,7 +4,7 @@ def make_word_list():
     returns: list of strings
     """
     word_list = []
-    fin = open('words.txt')
+    fin = open("words.txt")
     for line in fin:
         word = line.strip()
         word_list.append(word)
@@ -22,8 +22,8 @@ def in_bisect(word_list, word):
     pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     word_list = make_word_list()
 
-    for word in ['aa', 'alien', 'allen', 'zymurgy']:
-        print(word, 'in list', in_bisect(word_list, word))
+    for word in ["aa", "alien", "allen", "zymurgy"]:
+        print(word, "in list", in_bisect(word_list, word))
