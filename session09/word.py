@@ -208,8 +208,10 @@ def is_abecedarian_using_recursion(word):
         return True
     if word[0] > word[1]:
         return False
+    # print('now checking, ', word[1:])
     return is_abecedarian_using_recursion(word[1:])
 
+print(is_abecedarian_using_recursion('abcdef'))
 
 def is_abecedarian_using_while(word):
     """
