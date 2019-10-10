@@ -9,11 +9,10 @@ Among them, three are telling the truth while one is lying.
 Could you find out who is the thief?
 
 """
-suspects = ['John', 'Paul', 'George', 'Ringo']
+suspects = ["John", "Paul", "George", "Ringo"]
 for name in suspects:
-    if sum([
-        "John" != name,
-        "George" == name,
-        "Ringo" == name,
-            "Ringo" != name]) == 3:
+    if sum(["John" != name, 
+    "George" == name, 
+    "Ringo" == name, 
+    "Ringo" != name]) == 3:
         print(name)

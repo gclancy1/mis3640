@@ -1,6 +1,8 @@
-import my_math
+from my_math import square, app
 
-print("this is my_game.")
+# print("this is my_game.")
 
-n = int(input("Please enter a number:"))
-print(my_math.square(n))
+# n = int(input("Please enter a number:"))
+# print(square(n))
+
+app()

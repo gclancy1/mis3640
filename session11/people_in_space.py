@@ -8,6 +8,13 @@ with urllib.request.urlopen(url) as f:
     j = json.loads(response_text)
     print(j)
     
-    # Can you print number of people in the space?
+# print(len(j))
+# Can you print number of people in the space?
+# print(j['number'])
 
-    # Can you print all the names?
+# Can you print all the names?
+# print(j['people'], type(j['people'])) 
+
+for person in j['people']:
+    # print(person, type(person))
+    print(person['name'], 'is in', person['craft'])
