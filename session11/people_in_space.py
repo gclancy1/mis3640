@@ -9,5 +9,8 @@ with urllib.request.urlopen(url) as f:
     print(j)
     
     # Can you print number of people in the space?
-
+print(j['number'])
     # Can you print all the names?
+for people in j['people']:
+    print(people['name'])
+
