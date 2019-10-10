@@ -1,6 +1,6 @@
 def fib(n):
-    global numFibCalls
-    numFibCalls += 1
+    global number_fib_calls
+    number_fib_calls += 1
     if n == 1:
         return 1
     elif n == 2:
@@ -13,8 +13,8 @@ known = {1: 1, 2: 2}
 
 
 def fib_efficient(n):
-    global numFibCalls
-    numFibCalls += 1
+    global number_fib_calls
+    number_fib_calls += 1
     if n in known:
         return known[n]
     else:
@@ -23,14 +23,14 @@ def fib_efficient(n):
         return ans
 
 
-numFibCalls = 0
-fibArg = 10
+number_fib_calls = 0
+fib_args = 10
 
-print(fib(fibArg))
-print('function calls', numFibCalls)
+print(fib(fib_args))
+print('function calls', number_fib_calls)
 
-numFibCalls = 0
+number_fib_calls = 0
 
 
-print(fib_efficient(fibArg))
-print('function calls', numFibCalls)
+print(fib_efficient(fib_args))
+print('function calls', number_fib_calls)
