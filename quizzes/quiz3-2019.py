@@ -6,7 +6,7 @@ Q1. complete the following function
 
 def is_decreasing(data):
     """
-    Return True if the list is currently sorted in increasing order.
+    Return True if the list is currently sorted in decreasing order.
     Return False otherwise
     """
     pass
@@ -31,8 +31,8 @@ def is_decreasing(data):
 Q2. Below are all you names in a string. Please complete the function 
 to run a simulation of 100 times of class cold-callings. In this 
 simulation, every student has equal chance to be called. This function 
-should return a dictionary that records how many times each students 
-get called. Please do not change any code outside function.
+should return a dictionary that records how many times each student 
+got called. Please do not change any code outside function.
 ----------------------------------------------------------------------
 """
 
