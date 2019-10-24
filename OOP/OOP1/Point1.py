@@ -10,7 +10,7 @@ class Point:
 
 def print_point(p):
     """Print a Point object in human-readable format."""
-    print('({}, {}).'.format(p.x, p.y))
+    print(f'({p.x}, {p.y}).')
 
 
 def distance_between_points(p1, p2):
@@ -21,10 +21,6 @@ def distance_between_points(p1, p2):
 
     returns: float
     """
-    x_diff = p2.x - p1.x
-    y_diff = p2.y - p1.y
-    distance = math.sqrt(x_diff**2 + y_diff ** 2)
-    return distance
 
 
 class Rectangle:
@@ -59,7 +55,7 @@ def grow_rectangle(rect, dwidth, dheight):
 
 
 def print_rectangle(rect):
-    print('width:', rect.width, 'height:', rect.height)
+    print(f'width: {rect.width}, height:{rect.height})
     print('the lower-left corner:')
     print_point(rect.corner)
 
