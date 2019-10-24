@@ -61,42 +61,42 @@ def print_rectangle(rect):
 
 
 def main():
-    my_point = Point()
-    print(Point.__doc__)
-    my_point.x = 3
-    my_point.y = 4
-    print('My point', end=' ')
-    print_point(my_point)
+    # my_point = Point()
+    # print(Point.__doc__)
+    # my_point.x = 3
+    # my_point.y = 4
+    # print('My point', end=' ')
+    # print_point(my_point)
 
-    print('Is my_point an instance of Point?', isinstance(my_point, Point))
-    print('Is my_point an instance of Rectangle?',
-          isinstance(my_point, Rectangle))
-    print('Does my_point have an attribute x?', hasattr(my_point, 'x'))
-    print('Does my_point have an attribute z?', hasattr(my_point, 'z'))
+    # print('Is my_point an instance of Point?', isinstance(my_point, Point))
+    # print('Is my_point an instance of Rectangle?',
+    #       isinstance(my_point, Rectangle))
+    # print('Does my_point have an attribute x?', hasattr(my_point, 'x'))
+    # print('Does my_point have an attribute z?', hasattr(my_point, 'z'))
 
-    box = Rectangle()
-    box.width = 100.0
-    box.height = 200.0
-    box.corner = Point()
-    box.corner.x = 0.0
-    box.corner.y = 0.0
+    # box = Rectangle()
+    # box.width = 100.0
+    # box.height = 200.0
+    # box.corner = Point()
+    # box.corner.x = 0.0
+    # box.corner.y = 0.0
 
-    print('Does box have an attribute x?', hasattr(box, 'x'))
+    # print('Does box have an attribute x?', hasattr(box, 'x'))
 
-    print('Does box have an attribute corner?', hasattr(box, 'corner'))
+    # print('Does box have an attribute corner?', hasattr(box, 'corner'))
 
-    print('Rectangle has these:', dir(box))
+    # print('Rectangle has these:', dir(box))
 
-    center = find_center(box)
-    print('center', end=' ')
-    print_point(center)
+    # center = find_center(box)
+    # print('center', end=' ')
+    # print_point(center)
 
-    print(box.width)
-    print(box.height)
-    print('grow')
-    grow_rectangle(box, 50, 100)
-    print(box.width)
-    print(box.height)
+    # print(box.width)
+    # print(box.height)
+    # print('grow')
+    # grow_rectangle(box, 50, 100)
+    # print(box.width)
+    # print(box.height)
 
 
 if __name__ == '__main__':
