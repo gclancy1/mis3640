@@ -14,7 +14,6 @@ ROSTER = (
     "Nico",
     "Meiling",
     "Jenny",
-    "Xintong",
     "Shaun",
     "Brian",
     "David",
