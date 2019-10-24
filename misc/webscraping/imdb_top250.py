@@ -14,7 +14,7 @@ def download_page(url):
 
 
 def parse_html(html):
-    soup = BeautifulSoup(html, "lxml")
+    soup = BeautifulSoup(html)
     movie_table = soup.find('tbody', attrs={'class': 'lister-list'})
     movie_list = []
     for movie_row in movie_table.find_all('tr'):
@@ -27,6 +27,7 @@ def parse_html(html):
         movie_list.append((movie_name, year))
     return movie_list
 
+parse_html(download_page(DOWNLOAD_URL).read())
 
 def main():
     url = DOWNLOAD_URL
