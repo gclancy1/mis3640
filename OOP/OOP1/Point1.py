@@ -55,7 +55,7 @@ def grow_rectangle(rect, dwidth, dheight):
 
 
 def print_rectangle(rect):
-    print(f'width: {rect.width}, height:{rect.height})
+    print(f'width: {rect.width}, height:{rect.height}')
     print('the lower-left corner:')
     print_point(rect.corner)
 
