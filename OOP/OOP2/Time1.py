@@ -177,7 +177,7 @@ def valid_time(time):
     return True
 
 
-def add_time2(t1, t2):
+def add_time3(t1, t2):
     """Adds two time objects.
 
     t1, t2: Time
@@ -192,9 +192,9 @@ def add_time2(t1, t2):
     return int_to_time(seconds)
 
 
-# done = add_time2(start, duration)
+# done = add_time3(start, duration)
 # print_time(done)
-# another = add_time2(done, duration)
+# another = add_time3(done, duration)
 # print_time(another)
 
 
@@ -237,7 +237,7 @@ def main():
     print(is_after(end_time, noon_time))
 
     print('Home by', end=' ')
-    travel_time = 600      # 10 minutes
+    travel_time = 600  # 10 minutes
     home_time = increment_2(end_time, travel_time)
     print_time(home_time)
 
@@ -249,7 +249,7 @@ def main():
     print('Half marathon time', end=' ')
     print_time(race_time)
 
-    distance = 13.1       # miles
+    distance = 13.1  # miles
     pace = mul_time(race_time, 1 / distance)
 
     print('Time per mile', end=' ')
@@ -257,4 +257,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    # main()
+    pass
